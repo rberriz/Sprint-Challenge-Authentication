@@ -1,7 +1,7 @@
 # Sprint Challenge: Authentication - Dad Jokes
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored Authentication. During this Sprint, you studied Introduction to Authentication, Using Sessions and Cookies, Using JSON Web Tokens (JWT), and Client-side Authentication. In your challenge this week, you will demonstrate proficiency by creating an application that will give you a list of random dad jokes, as long as you are authorized.
-
+  
 - **DISCLAIMER** Authentication is a subject that many people spend a large amount time throughout their careers obtaining knowledge over. This is not something we expect you to have a mastery over, rather, we're preparing you to be able have an intelligent conversation about the subject.
 
 ## Instructions
@@ -29,10 +29,16 @@ Implement an User Authentication System in order to access the jokes from the Jo
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 1. What is the purpose of using _sessions_?
-1. What does bcrypt do to help us store passwords in a secure manner.
-1. What does bcrypt do to slow down attackers?
-1. What are the three parts of the JSON Web Token?
+using sessions allows us to store information about a client so that it can be used multiple times regardless of the times the system re-renders this way we don't have to keep putting credentials every time
 
+1. What does bcrypt do to help us store passwords in a secure manner.
+
+by including hashing, adding up hashing rounds and adding extra implementation, bcrypt makes it so that a hacker will have a very long time, essentially impossible time hacking the password
+
+1. What does bcrypt do to slow down attackers?
+it makes it so the hacker needs to use a hash, know the used algorithm and how many rounds were used to generate the hash initially
+1. What are the three parts of the JSON Web Token?
+header payload signature
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
